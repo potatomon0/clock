@@ -2,6 +2,14 @@ const secondHand = document.querySelector('.second-hand')
 const minHand = document.querySelector(".min-hand")
 const hourHand = document.querySelector(".hour-hand")
 
+document.documentElement.onload = function(){
+    // document.getElementById("loader").style.display="block"
+    
+}
+window.onload= function(){
+    // document.getElementById("loader").style.display="none"
+    setDate()
+}
 function setDate(){
     const now = new Date()
     const seconds = now.getSeconds()
